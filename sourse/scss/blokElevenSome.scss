@@ -1,0 +1,127 @@
+.eleven {
+	padding: 80px 0 95px 0;
+	@include adaptiv-value("padding-top", 80, 40, 0);
+   @include adaptiv-value("padding-bottom", 95, 30, 0);
+   height: 780px;
+}
+.ItemBlokRepeat{
+	max-width: 800px ;
+	margin: 0 auto;
+}
+.whantWeDo {
+	text-align: center;
+	font-size: 24px;
+	font-family: 'Kaushan Script', cursive;
+	margin-bottom: 30px;
+	@include adaptiv-value("margin-bottom", 30, 15, 0);
+	@include adaptiv-value("font-size", 24, 18, 0);
+}
+.about {
+	text-align: center;
+	font-family: 'Montserrat';
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 30px;
+	@include adaptiv-value("margin-bottom", 30, 15, 0);
+	@include adaptiv-value("font-size", 30, 20, 0);
+}
+.lineRed{
+	height: 3px;
+	width: 80px;
+	background: #f38181;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	@include adaptiv-value("margin-bottom", 50, 30, 0);
+	@include adaptiv-value("width", 80, 50, 0);
+}
+.lorem {
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 50px;
+	color: #999999;
+	line-height: 1.5;
+	@include adaptiv-value("margin-bottom", 50, 25, 0);
+}
+
+
+
+
+
+
+.elevenFlex{
+   display: flex;
+}
+
+.elevenFotoFlex1{
+   flex: 1 1 25%;
+ 
+}
+
+.work__item{
+   position: relative;
+   background: linear-gradient(to bottom, #f38181, #fce38a);
+   opacity: 1;
+}
+
+.work__foto-bg{
+
+   height: 200px;
+   @include adaptiv-value("height", 200, 97, 1);
+   overflow: hidden;
+   position: relative;
+}
+
+.work__foto-bg img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+
+}
+.works__info{
+   width: 100%;
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translate3d(0, -50%, 0);
+   z-index: 1;
+   opacity: 0;
+
+
+   
+}
+
+.work__title{
+  
+   text-align: center;
+   color: #fff;
+   font-size: 14px;
+   text-transform: uppercase;
+}
+
+.work__text{
+ 
+   text-align: center;
+   color: #fff;
+   font-size: 15px;
+   font-style: italic;
+  
+}
+
+.work__foto{
+
+   transition: all 0.1s linear;
+}
+
+.work__item:hover .work__foto{
+   opacity: 0.3;
+   transition: all 0.1s linear;
+}
+
+.work__item:hover .works__info{
+   opacity: 1;
+   transition: all 0.1s linear;
+}

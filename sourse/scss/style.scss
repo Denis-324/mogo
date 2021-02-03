@@ -1,0 +1,67 @@
+$maxWidth: 1440;
+$maxWidthContainer: 1230;
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type) {
+   $addSize: $startSize - $minSize;
+   @if $type==1 {
+      //только если меньше контейнера
+      #{$property}: $startSize + px;
+      @media (max-width: #{$maxWidthContainer + px;}) {
+         #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+      }
+   } @else if $type==2 {
+      //Только если больше контейнера
+      #{$property}: $startSize + px;
+      @media (min-width: #{$maxWidthContainer + px}) {
+         #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+      }
+   } @else {
+      //Всегда
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+   }
+}
+
+
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+// Файл обнуляющих стилей
+.wrapper{
+   overflow: hidden;
+   min-height: 100%;
+}
+.page{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+	font-size: 0;
+
+}
+.container {
+	width: 100%;
+	max-width: 1230px;
+   margin: 0 auto;
+   padding: 0 15px 0 15px;
+}
+
+@import "blokOneHeader.scss";
+@import "blokTwoMogo.scss";
+@import "blokThreeStory.scss";
+@import "blokFourNumbers.scss";
+@import "blokFiveAmazing.scss";
+@import "blokSixUnique.scss";
+@import "blokSevenWhat.scss";
+@import "blokEightJondoe.scss";
+@import "blokNineMeet.scss";
+@import "blokTenIcon.scss";
+@import "blokElevenSome.scss";
+@import "blokTwelveJoshua.scss";
+@import "blokThirteenWhatPeople.scss";
+@import "blokFourteenLatest.scss";
+@import "blokFifteenMap.scss";
+@import "blokSixteenSocial.scss";
+@import "blokSeventeenFooter.scss";
+@import "media.scss";

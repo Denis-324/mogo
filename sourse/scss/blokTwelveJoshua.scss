@@ -1,0 +1,55 @@
+.twelve{
+   background: #f8f8f8;
+   margin-top: 100px;
+   @include adaptiv-value("margin-top", 100, 20, 2);
+}
+
+.linered{
+   color: #f38181;
+}
+.jonItakic{
+   display: inline-block;
+   font-size: 16px;
+   margin-left: 10px;
+   font-weight: bold;
+}
+.twelve-blok{
+   width: 100%;
+   max-width: 1040px;
+   padding: 40px 15px 40px 15px;
+   margin: 0 auto; 
+   
+}
+
+.twelveFlex{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.twelveImg{
+   /*flex: 0 1 20%;*/
+   width: 150px;
+   height: 150px;
+   background-image: url("./../img/joshua_earle/01.jpg");
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   border-radius: 50%;
+   
+}
+
+
+.twelveText{
+   flex: 0 1 75%;
+   font-size: 24px;
+   font-style: italic;
+}
+
+@media (max-width: 767px){
+   .twelveFlex{
+      flex-direction: column;
+   }
+	.twelveImg{
+      margin-bottom: 10px;
+   }
+}

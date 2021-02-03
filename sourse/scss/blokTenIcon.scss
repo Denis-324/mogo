@@ -1,0 +1,17 @@
+.ten{
+   width: 100%;
+   max-width: 1200px;
+   max-height: 127px;
+   background: #f8f8f8;
+   margin: 0 auto;
+   margin-top: -40px;
+ 
+}
+.tenLogos{
+   width: 1200px;;
+   height: 127px;
+   background: url("./../img/meet_our_team/logos.jpg")no-repeat 50% 50%;
+   background-size: contain;
+   @include adaptiv-value("width", 1200, 315, 1);
+   @include adaptiv-value("height", 127, 80, 1);
+}

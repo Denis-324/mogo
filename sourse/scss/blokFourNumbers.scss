@@ -1,0 +1,46 @@
+.fourNumbers {
+	background: #95e1d3;
+}
+
+.fourNumbersFlex {
+	display: flex;
+	justify-contenr: space-between;
+	align-items: center;
+	text-align: center;
+
+}
+
+.fourNumbersItemsBorder{
+	padding: 0 15px 0 15px;
+	border-right: 1px solid #fff;
+	flex: 0 0 20%;
+}
+
+.fourNumbersItemsBorderOne{
+	border-left: 1px solid #fff;
+}
+.fourNumbersItems {
+
+
+
+
+	margin: 80px 0 80px 0;
+
+	@include adaptiv-value("margin-top", 80, 20, 1);
+	@include adaptiv-value("margin-bottom", 80, 20, 1);
+
+}
+.fourNumbersItemsN {
+	color: #fff;
+	font-size: 72px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	@include adaptiv-value("font-size", 72, 16, 1);
+}
+.fourNumbersItemsText {
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 1.5;
+	@include adaptiv-value("font-size", 14, 7, 1);
+}

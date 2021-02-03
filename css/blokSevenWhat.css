@@ -1,0 +1,40 @@
+.service {
+  padding: 80px 0 95px 0; }
+
+.serviceDesingerBlok {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center; }
+
+.service-text {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.service__item_italik {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Kaushan Script', cursive;
+  margin-bottom: 30px; }
+
+.service__item_bolt {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px; }
+
+.service-lineRed {
+  height: 3px;
+  width: 80px;
+  background: #f38181;
+  margin: 0 auto;
+  margin-bottom: 50px; }
+
+.service-lorem {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #999999;
+  line-height: 1.5; }

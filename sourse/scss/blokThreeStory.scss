@@ -1,0 +1,123 @@
+.whant {
+	padding: 80px 0 95px 0;
+	@include adaptiv-value("padding-top", 80, 40, 0);
+	@include adaptiv-value("padding-bottom", 95, 30, 0);
+}
+.ItemBlokRepeat{
+	max-width: 800px ;
+	margin: 0 auto;
+}
+.whantWeDo {
+	text-align: center;
+	font-size: 24px;
+	font-family: 'Kaushan Script', cursive;
+	margin-bottom: 30px;
+	@include adaptiv-value("margin-bottom", 30, 15, 0);
+	@include adaptiv-value("font-size", 24, 18, 0);
+}
+.about {
+	text-align: center;
+	font-family: 'Montserrat';
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 30px;
+	@include adaptiv-value("margin-bottom", 30, 15, 0);
+	@include adaptiv-value("font-size", 30, 20, 0);
+}
+.lineRed{
+	height: 3px;
+	width: 80px;
+	background: #f38181;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	@include adaptiv-value("margin-bottom", 50, 30, 0);
+	@include adaptiv-value("width", 80, 50, 0);
+}
+.lorem {
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 50px;
+	color: #999999;
+	line-height: 1.5;
+	@include adaptiv-value("margin-bottom", 50, 25, 0);
+}
+.superTeam {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+
+.color{
+	position: relative;
+	z-index: 1;
+	background: #95e1d3;
+	width: 380px;
+	height: 250px;
+	transition: all 0.1s linear;
+	@include adaptiv-value("width", 380, 270, 1);
+	@include adaptiv-value("height", 250, 150, 1);
+}
+.superTeamFoto {
+	position: relative;
+	width: 380px;
+	height: 250px;
+
+	@include adaptiv-value("width", 380, 270, 1);
+	@include adaptiv-value("height", 250, 150, 1);
+}
+.colorMargin{
+	padding-right: 15px;
+}
+.superTeamFoto:hover {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	z-index: 6;
+	opacity: 1;
+	width: 100%;
+	height: 100%
+}
+
+
+.superTeamTextImg {
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction: column;
+	background: rgb(247,129,118); 
+	background: -moz-linear-gradient(left, rgb(247,129,118) 0%, rgb(251,157,35) 100%); 
+	background: -webkit-linear-gradient(left, rgb(247,129,118) 0%,rgb(251,157,35) 100%); 
+	background: linear-gradient(to right, rgb(247,129,118) 0%,rgb(251,157,35) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f78176', endColorstr='#fb9d23',GradientType=1 ); 
+	opacity: 0;
+	transition: all 0.2s linear;
+
+}
+
+.imgAboutText{
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	opacity: 1;
+}
+
+
+
+
+.superTeamTextImg:hover{
+	opacity: 0.8;
+}
+
+.marginTeamFoto{
+	margin: 0 15px 0 15px;
+}

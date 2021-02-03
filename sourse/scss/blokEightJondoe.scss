@@ -1,0 +1,52 @@
+.blokEightJondoeC{
+   background: #f8f8f8;
+}
+
+.linered{
+   color: #f38181;
+}
+.jonItakic{
+   display: inline-block;
+   font-size: 16px;
+   margin-left: 10px;
+   font-weight: bold;
+}
+.blokEightJondoe{
+   width: 100%;
+   max-width: 1040px;
+   padding: 40px 15px 40px 15px;
+   margin: 0 auto; 
+   
+}
+
+.eightFlex{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.eightImg{
+   /*flex: 0 1 20%;*/
+   width: 150px;
+   height: 150px;
+   background-image: url("./../img/jon_doe/01.png");
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   border: 2px solid #95e1d3;
+}
+
+
+.eightText{
+   flex: 0 1 75%;
+   font-size: 24px;
+   font-style: italic;
+}
+
+@media (max-width: 767px){
+   .eightFlex{
+      flex-direction: column;
+   }
+	.eightImg{
+      margin-bottom: 10px;
+   }
+}

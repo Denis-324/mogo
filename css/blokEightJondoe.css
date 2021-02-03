@@ -1,0 +1,20 @@
+.eightFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.eightImg {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 30%;
+  flex: 1 1 30%;
+  width: 200px;
+  height: 200px;
+  background-image: url("../../img/jon_doe/01.png");
+  background-repeat: no-repeat; }
+
+.eightText {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 70%;
+  flex: 1 1 70%;
+  font-size: 24px;
+  font-style: italic; }

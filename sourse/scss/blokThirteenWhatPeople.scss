@@ -1,0 +1,89 @@
+.thirteen{
+	/*flex: 0 0 100%;
+	position: relative;
+   min-height: 768px;*/
+   margin-top: 80px;
+  /*padding-top: 80px;
+   padding-bottom: 50px;*/
+}
+
+.invisible{
+   color: #000;
+   font-size: 28px;
+   text-transform: uppercase;
+   font-weight: bold;
+   text-align: center;
+   opacity: 1;
+   position: relative;
+   z-index: 10;
+   
+   @include adaptiv-value("font-size", 28, 5, 0);
+}
+
+.thirteen-m{
+   
+}
+.thirteen__blok{
+   background: url("./../img/what_people_say/01.jpg") no-repeat  ;
+   background-position: 0 0;
+	background-size: cover;	
+}
+
+
+.clientsFlex{
+   display: flex;
+   flex-wrap: wrap;
+   
+}
+
+.clients__desinger{
+   flex: 0 1 50%;
+   display: flex;
+   margin-top: 30px;
+   margin-left: 0px;
+   
+   
+}
+
+.clients__foto{
+  
+}
+
+.clients__characteristic{
+   margin-left: 15px;
+   
+}
+
+.clients__name{
+   color: #000;
+   font-size: 14px;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+.clients__profession{
+   color: #000;
+   font-size: 15px;
+   font-style: italic;
+}
+.clients__line{
+   height: 3px;
+   width: 50px;
+   background-color: #e88183;
+}
+
+.clients__description{
+   font-size: 16px;
+   color: #bcbcbc;
+   line-height: 1.3;
+}
+.clientsM{
+   margin-bottom: 20px;
+
+}
+
+@media (max-width: 876px){
+   .clients__desinger{
+      flex: 1 1 100%;
+   }
+	
+}
